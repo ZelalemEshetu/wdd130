@@ -1,8 +1,48 @@
-body {
-  background-color: #f2f2f2;
-  font-family: Arial, sans-serif;
+/* Limit the main content width */
+main {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
-h1 {
-  color: green;
+/* Profile image inside main */
+main img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+}
+
+/* Style for the aside section */
+aside {
+  width: 300px;
+  margin: 20px auto;
+  border: 1px solid #333;
+  padding: 15px;
+  background-color: #f0f0f0; /* Light gray background */
+  color: #000; /* Black text for good contrast */
+}
+
+/* Image inside the aside should not distort */
+aside img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Remove padding from all paragraphs */
+p {
+  padding: 0;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 2rem; /* Add space above the footer */
+  border-top: 2px solid #000; /* Top border for separation */
+  text-align: center; /* Center text */
+  padding: 1rem;
+  background-color: #eee; /* Light background for clarity */
+  color: #000; /* Ensure good text contrast */
 }
