@@ -5,7 +5,7 @@ main {
   padding: 1rem;
 }
 
-/* Profile image inside main */
+/* Main image specifically */
 main img {
   width: 150px;
   height: auto;
@@ -14,17 +14,17 @@ main img {
   border-radius: 8px;
 }
 
-/* Style for the aside section */
+/* ASIDE Section Styling */
 aside {
   width: 300px;
   margin: 20px auto;
   border: 1px solid #333;
   padding: 15px;
-  background-color: #f0f0f0; /* Light gray background */
-  color: #000; /* Black text for good contrast */
+  background-color: #f0f0f0;
+  color: #000;
 }
 
-/* Image inside the aside should not distort */
+/* ASIDE image styling */
 aside img {
   width: 200px;
   height: auto;
@@ -32,17 +32,14 @@ aside img {
   margin: 0 auto;
 }
 
-/* Remove padding from all paragraphs */
+/* Paragraph styling (padding = 0 with no units) */
 p {
   padding: 0;
 }
 
 /* Footer styling */
 footer {
-  margin-top: 2rem; /* Add space above the footer */
-  border-top: 2px solid #000; /* Top border for separation */
-  text-align: center; /* Center text */
-  padding: 1rem;
-  background-color: #eee; /* Light background for clarity */
-  color: #000; /* Ensure good text contrast */
+  margin-top: 2rem;
+  border-top: 2px solid #000;
+  text-align: center;
 }
