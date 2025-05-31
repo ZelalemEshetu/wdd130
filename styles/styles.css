@@ -1,11 +1,29 @@
-/* Limit the main content width */
-main {
+/* Global structure */
+header, main, footer {
   width: 1200px;
   margin: 0 auto;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  gap: 1rem;
+  background-color: #eee;
   padding: 1rem;
 }
 
-/* Main image specifically */
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+}
+
+/* Main image */
 main img {
   width: 150px;
   height: auto;
@@ -14,7 +32,7 @@ main img {
   border-radius: 8px;
 }
 
-/* ASIDE Section Styling */
+/* Aside */
 aside {
   width: 300px;
   margin: 20px auto;
@@ -24,7 +42,6 @@ aside {
   color: #000;
 }
 
-/* ASIDE image styling */
 aside img {
   width: 200px;
   height: auto;
@@ -32,21 +49,14 @@ aside img {
   margin: 0 auto;
 }
 
-/* Paragraph styling (padding = 0 with no units) */
+/* Paragraphs */
 p {
   padding: 0;
 }
 
-/* Footer styling */
+/* Footer */
 footer {
-  width: 1200px;
-  margin: 2rem auto 0 auto;
   border-top: 2px solid #000;
   text-align: center;
-}
-
-/* Header styling (optional: assuming teacher wants the same fixed width) */
-header {
-  width: 1200px;
-  margin: 0 auto;
+  padding-top: 1rem;
 }
