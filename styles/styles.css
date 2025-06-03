@@ -23,6 +23,9 @@ h1 {
   text-align: center;
 }
 
+main {
+  max-width: 840px;
+}
 /* Main image */
 main img {
   width: 150px;
