@@ -1,4 +1,10 @@
 /* Google Fonts are loaded in the HTML file */
+
+/* Basic reset and box-sizing */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -56,6 +62,13 @@ p {
   font-size: 1.1rem;
 }
 
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Footer styles */
 footer {
   background-color: #004d66;
@@ -86,3 +99,4 @@ footer {
     padding: 1rem;
   }
 }
+
