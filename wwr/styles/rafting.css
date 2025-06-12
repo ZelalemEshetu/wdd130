@@ -1,22 +1,32 @@
 /* Google Fonts are loaded in the HTML file */
 
+/* CSS Variables */
+:root {
+  --primary-color: #004d66;
+  --secondary-color: #ffcc00;
+  --background-color: #f5f5f5;
+  --text-color: #333;
+  --font-primary: 'Roboto', sans-serif;
+  --font-heading: 'Merriweather', serif;
+}
+
 /* Basic reset and box-sizing */
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-primary);
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
-  color: #333;
+  background-color: var(--background-color);
+  color: var(--text-color);
   line-height: 1.6;
 }
 
 /* Header styles */
 header {
-  background-color: #004d66;
+  background-color: var(--primary-color);
   color: white;
   display: flex;
   justify-content: space-between;
@@ -40,7 +50,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffcc00;
+  color: var(--secondary-color);
 }
 
 /* Main content styles */
@@ -50,9 +60,49 @@ main {
   margin: 0 auto;
 }
 
+/* Hero Section */
+.hero {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero h1 {
+  font-family: var(--font-heading);
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero article {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+.hero article img {
+  float: right;
+  margin-left: 1rem;
+  max-width: 100px;
+  border-radius: 5px;
+}
+
 h1 {
-  font-family: 'Merriweather', serif;
-  color: #004d66;
+  font-family: var(--font-heading);
+  color: var(--primary-color);
   margin-bottom: 1rem;
 }
 
@@ -92,12 +142,24 @@ img {
 
 /* Footer styles */
 footer {
-  background-color: #004d66;
+  background-color: var(--primary-color);
   color: white;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
   margin-top: 2rem;
+}
+
+/* Social Media Links */
+footer a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a img {
+  vertical-align: middle;
+  height: 24px;
+  width: 24px;
 }
 
 /* Responsive tweaks */
@@ -118,6 +180,14 @@ footer {
 
   main {
     padding: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero article {
+    max-width: 90%;
   }
 }
 
