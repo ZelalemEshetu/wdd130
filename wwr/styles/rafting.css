@@ -12,6 +12,13 @@ body {
   color: var(--text-color);
   margin: 0;
 }
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 1rem;
+}
+
 
 header {
   background-color: var(--primary-color);
@@ -31,6 +38,10 @@ nav a {
   margin-left: 15px;
   text-decoration: none;
   font-weight: bold;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
 }
 
 .hero {
@@ -99,5 +110,16 @@ footer a img {
   text-decoration: none;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+footer .social {
+  display: flex;
+  gap: 10px;
+}
 
 
