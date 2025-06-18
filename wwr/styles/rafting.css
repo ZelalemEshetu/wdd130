@@ -31,9 +31,9 @@ body {
 header {
   background-color: var(--header-bg-color);
   color: white;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
+  display: grid;
+  align-items: center;
   padding: 1rem;
 }
 
@@ -43,7 +43,8 @@ header img {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 1rem;
   align-items: center;
 }
 
@@ -59,6 +60,30 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.gallery figure {
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.gallery figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
 
 .hero {
   position: relative;
