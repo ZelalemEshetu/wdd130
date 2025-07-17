@@ -1,65 +1,56 @@
-/* Global structure */
-header, main, footer {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-/* Navigation */
 nav {
-  display: flex;
-  gap: 1rem;
-  background-color: #eee;
-  padding: 1rem;
+  background-color: darkblue;
+  padding: 10px;
 }
 
 nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
+  color: white;
+  display: block;
+  padding: 20px;
 }
 
-/* Heading */
 h1 {
-  text-align: center;
+  color: darkblue;
+}
+
+img {
+  width: 150px;
+  height: auto;
+  border: 1px solid black;
+  padding: 2px;
+  box-shadow: 0 0 30px gray;
 }
 
 main {
   max-width: 840px;
 }
-/* Main image */
-main img {
-  width: 150px;
-  height: auto;
-  display: block;
-  margin: 1rem auto;
-  border-radius: 8px;
-}
 
-/* Aside */
 aside {
-  width: 300px;
-  margin: 20px auto;
-  border: 1px solid #333;
-  padding: 15px;
-  background-color: #f0f0f0;
-  color: #000;
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.2); /* subtle transparent border */
+  padding: 1rem;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
 }
 
 aside img {
   width: 200px;
   height: auto;
-  display: block;
-  margin: 0 auto;
 }
 
-/* Paragraphs */
+main img {
+  width: 150px;
+  height: auto;
+}
+
 p {
   padding: 0;
 }
 
-/* Footer */
 footer {
-  border-top: 2px solid #000;
+  margin-top: 15px;
+  border-top: 1px solid #000;
   text-align: center;
-  padding-top: 1rem;
 }
