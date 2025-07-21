@@ -1,45 +1,61 @@
+:root {
+  --primary-color: #0057a0;
+  --secondary-color: #f2f2f2;
+  --text-color: #333;
+  --heading-font: 'Montserrat', Helvetica, sans-serif;
+  --body-font: Arial, sans-serif;
+  --padding: 1rem;
+  --border: 1px solid rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0 30px gray;
+  --aside-bg: #eee;
+}
+
+/* Use variables here */
+body {
+  font-family: var(--body-font);
+  color: var(--text-color);
+}
+
 nav {
-  background-color: darkblue;
-  padding: 10px;
+  background-color: var(--primary-color);
+  padding: var(--padding);
 }
 
 nav a {
   color: white;
   display: block;
   padding: 20px;
-  text-decoration: none; /* helps links look cleaner */
+  text-decoration: none;
 }
 
 h1 {
-  color: darkblue;
+  color: var(--primary-color);
+  font-family: var(--heading-font);
 }
 
 main {
   max-width: 840px;
-  margin: 0 auto; /* centers main content horizontally */
+  margin: 0 auto;
 }
 
-/* Profile image in main section */
 main img {
   width: 150px;
   height: auto;
-  border: 1px solid black;
+  border: var(--border);
   padding: 2px;
-  box-shadow: 0 0 30px gray;
+  box-shadow: var(--box-shadow);
 }
 
-/* Aside styling */
 aside {
   width: 20rem;
-  margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 0.2); /* subtle transparent border */
-  padding: 1rem;
-  background-color: #eee;
-  color: #333;
+  margin: var(--padding);
+  border: var(--border);
+  padding: var(--padding);
+  background-color: var(--aside-bg);
+  color: var(--text-color);
   text-align: center;
 }
 
-/* Image inside aside */
 aside img {
   width: 200px;
   height: auto;
@@ -51,8 +67,7 @@ p {
 
 footer {
   margin-top: 15px;
-  border-top: 1px solid #000;
+  border-top: var(--border);
   text-align: center;
-  padding-top: 10px; /* small padding for better spacing */
+  padding-top: 10px;
 }
-
