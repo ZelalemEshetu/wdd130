@@ -7,14 +7,20 @@ nav a {
   color: white;
   display: block;
   padding: 20px;
+  text-decoration: none; /* helps links look cleaner */
 }
-
 
 h1 {
   color: darkblue;
 }
 
-img {
+main {
+  max-width: 840px;
+  margin: 0 auto; /* centers main content horizontally */
+}
+
+/* Profile image in main section */
+main img {
   width: 150px;
   height: auto;
   border: 1px solid black;
@@ -22,10 +28,7 @@ img {
   box-shadow: 0 0 30px gray;
 }
 
-main {
-  max-width: 840px;
-}
-
+/* Aside styling */
 aside {
   width: 20rem;
   margin: 1rem;
@@ -36,13 +39,9 @@ aside {
   text-align: center;
 }
 
+/* Image inside aside */
 aside img {
   width: 200px;
-  height: auto;
-}
-
-main img {
-  width: 150px;
   height: auto;
 }
 
@@ -54,4 +53,6 @@ footer {
   margin-top: 15px;
   border-top: 1px solid #000;
   text-align: center;
+  padding-top: 10px; /* small padding for better spacing */
 }
+
