@@ -1,3 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Class Selectors */
+.box {
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: #e0f7fa;
+  color: #004d40;
+}
+aside {
+  width: 20em;
+  text-align: center;
+  position: relative;
+}
+aside h2 {
+  position: absolute;
+  top: 47px; /* Adjust as needed */
+  left: 150px; /* Adjust as needed */
+}
+main img {
+  float: right;
+  margin-left: 1rem;
+  width: 200px; /* optional sizing */
+}
+
 :root {
   --primary-color: #0057a0;
   --secondary-color: #f2f2f2;
