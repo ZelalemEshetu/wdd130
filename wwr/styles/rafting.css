@@ -23,10 +23,12 @@ header {
   color: var(--accent1-color);
 }
 
-header, main, footer {
-  width: 840px;
+header, .grid, footer {
+  max-width: 840px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
+
 
 h1, h2 {
   font-family: var(--heading-font);
@@ -78,4 +80,52 @@ h1 {
   float: right;
   width: 125px;
   margin-left: 16px; /* add spacing */
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns: 100px 1fr 2fr;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.main-nav {
+  display: flex;
+  justify-content:center;
+  gap: 1rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--accent2-color);
+  font-weight: bold;
+}
+.history-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.gallery figure {
+  text-align: center;
+}
+.main-nav a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--accent2-color);
+  font-weight: bold;
 }
