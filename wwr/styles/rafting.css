@@ -305,6 +305,11 @@ body {
 .site-footer .social-icon:hover img {
   filter: none;
 }
+.map-container iframe {
+  border: 0;
+  width: 100%;
+  height: 450px; /* optional: keep responsive */
+}
 
 
 }
