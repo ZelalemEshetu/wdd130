@@ -1,89 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us- Rafting Adventure</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@700&family=Lato&display=swap" rel="stylesheet" />
-
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="styles/rafting.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | White Water Rafting Adventures</title>
+  <meta name="description" content="Contact Whitewater Rafting Adventures for reservations, general inquiries, or suggestions. Find our address, phone, email, and meet our friendly team.">
+  <meta name="author" content="Zelalem Eshetu">
+  <link rel="stylesheet" href="styles/rafting.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-  <header>
-  <img src="images/logo.png" alt="Rafting Logo" width="100">
-  <nav> 
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+<header>
+  <h1>Whitewater Rafting Adventures</h1>
+  <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <h1>Contact Us</h1>
-    <p>Email:zelalemeshetubeshah@gmail.com</p>
-    <p>phone:+251954728284</p>
-    <p><Address>:CMC,Adventure City,Addis Ababa,Ethiopia</Address></p>
-  
-  <section class="history">
-    <h2>Our History</h2>
-    <p>Founded in 2005, our rafting company has served thousands of happy adventurers...</p>
-  </section>
+    <h2>Contact Us</h2>
+    <section class="company-info">
+      <h3>Our Office</h3>
+      <p>Address: 123 River Rapids Rd, Adventure City, CO 80000</p>
+      <p>Phone: (555) 123-4567</p>
+      <p>Email: info@wwrafting.com</p>
 
-  <section class="adventure">
-    <h2>Why Choose Us</h2>
-    <p>We offer thrilling adventures, certified guides, and unmatched safety records.</p>
-  </section>
-
-    <div class="hero">
-      <img src="images/hero.jpg" alt="Rafting Adventure" />
-      <h1>White Water Rafting</h1>
-      <article>
-        <img src="images/happy-client.jpg" alt="Happy client" />
-        <p>
-          Welcome to White Water Rafting! We are dedicated to bringing you the most thrilling river adventures, full of fun, safety, and unforgettable memories.
-        </p>
-      </article>
-    </div>
-
-    <section>
-      <h2>History</h2>
-      <p>
-        Established in 2005, White Water Rafting began as a small family-owned business and has grown to become one of the most trusted rafting companies in the region.
-      </p>
+      <div class="map-container">
+        <!-- Google Map Embed -->
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_CODE" 
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
     </section>
-
-    <section>
-      <h2>Adventure Awaits You</h2>
-      <img src="images/sunset.jpg" alt="Sunset over an ocean" />
-      <img src="images/fun.jpg" alt="People having fun together with big smiles and playful energy" />
-      <img src="images/trip1.jpg" alt="Group enjoying an ocean trip on a aboat" />
-      <img src="images/trip2.jpg" alt="People enjoying a funny trip by outdoors" />
-      <img src="images/training.jpg" alt="People enjoying in a training session" />
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 White Water Rafting | Zelalem Eshetu</p>
     
-  <div class="social">
-    <a href="https://facebook.com" target="_blank">
-      <img src="images/facebook.png" alt="Facebook" width="30">
+    <section class="team">
+      <h3>Meet Our Team</h3>
+      <figure>
+        <img src="images/employee1.jpg" alt="John - Tour Guide">
+        <figcaption>John - Senior Tour Guide</figcaption>
+      </figure>
+      <figure>
+        <img src="images/employee2.jpg" alt="Sarah - Reservations Manager">
+        <figcaption>Sarah - Reservations Manager</figcaption>
+      </figure>
+      <figure>
+        <img src="images/employee3.jpg" alt="Mike - Safety Coordinator">
+        <figcaption>Mike - Safety Coordinator</figcaption>
+      </figure>
+    </section>
+        <section class="contact-form">
+      <h3>Send Us a Message</h3>
+      <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <p>Purpose of Message:</p>
+        <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
+        <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label>
+        <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <label>
+          <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
+        </label>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>      
+        
+  <footer class="site-footer boxed-section">
+    <p>&copy; 2025 White Water Rafting | All rights reserved</p>
+    <div class="social">
+    <a href="#" aria-label="Facebook" class="social-icon">
+      <img src="images/facebook.png" alt="Facebook" width="24" height="24">
     </a>
-    <a href="https://instagram.com" target="_blank">
-      <img src="images/Instagram.jpg" alt="Instagram" width="30">
+    <a href="#" aria-label="Instagram" class="social-icon">
+      <img src="images/instagram.jpg" alt="Instagram" width="24" height="24">
     </a>
-    <a href="https://twitter.com" target="_blank">
-      <img src="images/twitter.png" alt="Twitter" width="30">
+    <a href="#" aria-label="Twitter" class="social-icon">
+      <img src="images/twitter.png" alt="Twitter" width="24" height="24">
     </a>
   </div>
-</footer>
-
+  </footer>
 </body>
 </html>
-
-
 
 
