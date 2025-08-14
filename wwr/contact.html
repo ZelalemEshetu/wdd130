@@ -47,15 +47,15 @@
     <section class="team">
       <h3>Meet Our Team</h3>
       <figure>
-        <img src="images/employee1.jpeg" alt="John - Tour Guide">
+        <img src="images/employee1.jpg" alt="John - Tour Guide">
         <figcaption>John - Senior Tour Guide</figcaption>
       </figure>
       <figure>
-        <img src="images/employee2.jpeg" alt="Sarah - Reservations Manager">
+        <img src="images/employee2.jpg" alt="Sarah - Reservations Manager">
         <figcaption>Sarah - Reservations Manager</figcaption>
       </figure>
       <figure>
-        <img src="images/employee3.jpeg" alt="Mike - Safety Coordinator">
+        <img src="images/employee3.jpg" alt="Mike - Safety Coordinator">
         <figcaption>Mike - Safety Coordinator</figcaption>
       </figure>
     </section>
@@ -69,9 +69,9 @@
         <input type="email" id="email" name="email" required>
 
         <p>Purpose of Message:</p>
-        <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
-        <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label>
-        <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+        <label for="general"><input type="radio" id="general" name="purpose" value="General Inquiry" required> General Inquiry</label>
+        <label for="reservation"><input type="radio" id="reservation" name="purpose" value="Reservation Question"> Reservation Question</label>
+        <label for="suggestion"><input type="radio" id="suggestion" name="purpose" value="Website Suggestion"> Website Suggestion</label>
 
         <label for="message">Your Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
