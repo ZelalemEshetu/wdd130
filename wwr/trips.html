@@ -22,15 +22,20 @@
     </nav>
   </header>
 
-  <main class="wrap section">
-    <header class="section-head">
-      <h1>Choose Your Adventure</h1>
+  <!-- Hero Section -->
+  <section class="hero" role="banner">
+    <img class="hero-img" src="images/hero-rafting.jpg" alt="Raft slicing through river rapids" style="width:100%; height:auto;" loading="lazy">
+    <div class="hero-overlay">
+      <h1 class="hero-title">Choose Your Adventure</h1>
       <a class="btn btn-primary" href="contact.html">Reserve a Trip</a>
-    </header>
+    </div>
+  </section>
 
+  <!-- Main Content -->
+  <main class="wrap section" role="main">
     <div class="trips-grid">
       <article class="trip">
-        <img src="images/river-discovery.jpg" alt="Calm river section ideal for beginners" width="720" height="480">
+        <img src="images/river-discovery.jpg" alt="Family enjoying calm river section ideal for beginners" width="720" height="480" loading="lazy">
         <div class="trip-body">
           <h2>River Discovery</h2>
           <p>Gentle float perfect for families and first‑timers. Scenic views and splashy fun.</p>
@@ -43,7 +48,7 @@
       </article>
 
       <article class="trip">
-        <img src="images/rapids-rush.jpg" alt="Mid‑rapid action shot with paddlers" width="720" height="480">
+        <img src="images/rapids-rush.jpg" alt="Paddlers navigating mid-rapids section" width="720" height="480" loading="lazy">
         <div class="trip-body">
           <h2>Rapids Rush</h2>
           <p>Our most popular blend of thrills and scenery with expert guiding throughout.</p>
@@ -56,7 +61,7 @@
       </article>
 
       <article class="trip">
-        <img src="images/extreme-gauntlet.jpg" alt="Advanced crew tackling big whitewater" width="720" height="480">
+        <img src="images/extreme-gauntlet.jpg" alt="Experienced crew tackling big whitewater rapids" width="720" height="480" loading="lazy">
         <div class="trip-body">
           <h2>Extreme Gauntlet</h2>
           <p>For experienced paddlers seeking serious whitewater and adrenaline.</p>
@@ -69,33 +74,34 @@
       </article>
     </div>
 
+    <!-- Trip Comparison Table -->
     <h2 class="mt">Trip Summary</h2>
     <div class="table-wrap">
       <table>
-        <caption class="sr-only">Trip comparison table</caption>
+        <caption>Comparison of rafting trips by difficulty, duration, and price</caption>
         <thead>
           <tr>
-            <th>Trip</th>
-            <th>Difficulty</th>
-            <th>Duration</th>
-            <th>Price</th>
+            <th scope="col">Trip</th>
+            <th scope="col">Difficulty</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Price</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th>River Discovery</th>
+            <th scope="row">River Discovery</th>
             <td>Easy (Class I–II)</td>
             <td>2.5 hours</td>
             <td>$49</td>
           </tr>
           <tr>
-            <th>Rapids Rush</th>
+            <th scope="row">Rapids Rush</th>
             <td>Moderate (Class II–III)</td>
             <td>Half‑day</td>
             <td>$89</td>
           </tr>
           <tr>
-            <th>Extreme Gauntlet</th>
+            <th scope="row">Extreme Gauntlet</th>
             <td>Advanced (Class IV)</td>
             <td>Full day</td>
             <td>$149</td>
@@ -105,14 +111,14 @@
     </div>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <p>&copy; <span id="year"></span> White Water Rafting Adventures</p>
-<ul class="social">
-  <li><a href="https://www.facebook.com/YourPage" target="_blank">Facebook</a></li>
-  <li><a href="https://www.instagram.com/YourProfile" target="_blank">Instagram</a></li>
-  <li><a href="https://www.youtube.com/YourChannel" target="_blank">YouTube</a></li>
-</ul>
-
+    <ul class="social">
+      <li><a href="https://www.facebook.com/YourPage" target="_blank" rel="noopener noreferrer" title="Visit our Facebook page">Facebook</a></li>
+      <li><a href="https://www.instagram.com/YourProfile" target="_blank" rel="noopener noreferrer" title="Visit our Instagram profile">Instagram</a></li>
+      <li><a href="https://www.youtube.com/YourChannel" target="_blank" rel="noopener noreferrer" title="Visit our YouTube channel">YouTube</a></li>
+    </ul>
   </footer>
 
   <script>
