@@ -1,38 +1,121 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Hello! My name is Zelalem Eshetu.
-I am from Addis Ababa, Ethiopia. I’m a dedicated mathematics teacher with a Bachelor of Science degree in Pure Mathematics from Hawassa University and a Master of Science in Project Planning and Management from Yom College.
-Currently, I am a Software Development degree student at BYU-Idaho. I’m passionate about teaching, learning web development, and sharing knowledge with others. I also enjoy spiritual music and uplifting discussions that inspire growth and positivity.
-" />
-  <meta name="author" content="Zelalem Eshetu" />
-  <title>Zelalem Eshetu | WDD 130</title>
-  <link rel="stylesheet" href="styles/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>White Water Rafting Adventures | Trips</title>
+  <meta name="description" content="Browse beginner to advanced white water rafting trips. Compare duration, difficulty, and price, then contact us to reserve your spot." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header>
-  <nav>
-    <a href="index.html">Home</a>  <!-- Home page -->
-    <a href="about.html">About</a> <!-- About page -->
-</nav>
-</header>
-  <main>
-    <h1>Zelalem Eshetu | WDD 130</h1>
-    <img src="images/profile.jpg" alt="Photo of Zelalem Eshetu" />
-    <p>Hello! My name is Zelalem Eshetu. I am from Addis Ababa, Ethiopia. I’m a dedicated mathematics teacher with a Bachelor of Science degree in Pure Mathematics from Hawassa University and a Master of Science in Project Planning and Management from Yom College. Currently, I am a Software Development degree student at BYU-Idaho. I’m passionate about teaching, learning web development, and sharing knowledge with others. I also enjoy spiritual music and uplifting discussions that inspire growth and positivity.</p>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="White Water Rafting Adventures home">
+      <img src="images/logo.svg" alt="WWR logo" width="140" height="40" />
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="trips.html" aria-current="page">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="wrap section">
+    <header class="section-head">
+      <h1>Choose Your Adventure</h1>
+      <a class="btn btn-primary" href="contact.html">Reserve a Trip</a>
+    </header>
+
+    <div class="trips-grid">
+      <article class="trip">
+        <img loading="lazy" src="images/river-discovery.jpg" alt="Calm river section ideal for beginners" width="720" height="480" />
+        <div class="trip-body">
+          <h2>River Discovery</h2>
+          <p>Gentle float perfect for families and first‑timers. Scenic views and splashy fun.</p>
+          <ul class="meta">
+            <li><strong>Difficulty:</strong> Easy (Class I–II)</li>
+            <li><strong>Duration:</strong> 2.5 hours</li>
+            <li><strong>Price:</strong> $49 per person</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="trip">
+        <img loading="lazy" src="images/rapids-rush.jpg" alt="Mid‑rapid action shot with paddlers" width="720" height="480" />
+        <div class="trip-body">
+          <h2>Rapids Rush</h2>
+          <p>Our most popular blend of thrills and scenery with expert guiding throughout.</p>
+          <ul class="meta">
+            <li><strong>Difficulty:</strong> Moderate (Class II–III)</li>
+            <li><strong>Duration:</strong> Half‑day</li>
+            <li><strong>Price:</strong> $89 per person</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="trip">
+        <img loading="lazy" src="images/extreme-gauntlet.jpg" alt="Advanced crew tackling big whitewater" width="720" height="480" />
+        <div class="trip-body">
+          <h2>Extreme Gauntlet</h2>
+          <p>For experienced paddlers seeking serious whitewater and adrenaline.</p>
+          <ul class="meta">
+            <li><strong>Difficulty:</strong> Advanced (Class IV)</li>
+            <li><strong>Duration:</strong> Full day</li>
+            <li><strong>Price:</strong> $149 per person</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+
+    <!-- Summary Table -->
+    <h2 class="mt">Trip Summary</h2>
+    <div class="table-wrap">
+      <table>
+        <caption class="sr-only">Trip comparison table</caption>
+        <thead>
+          <tr>
+            <th scope="col">Trip</th>
+            <th scope="col">Difficulty</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">River Discovery</th>
+            <td>Easy (Class I–II)</td>
+            <td>2.5 hours</td>
+            <td>$49</td>
+          </tr>
+          <tr>
+            <th scope="row">Rapids Rush</th>
+            <td>Moderate (Class II–III)</td>
+            <td>Half‑day</td>
+            <td>$89</td>
+          </tr>
+          <tr>
+            <th scope="row">Extreme Gauntlet</th>
+            <td>Advanced (Class IV)</td>
+            <td>Full day</td>
+            <td>$149</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </main>
 
-  <aside>
-    <h2>Ethiopia | WDD 130</h2>
-    <img src="images/ethiopia.jpg" alt="Scenic view of Ethiopia" />
-    <p>Ethiopia is a beautiful country located in the Horn of Africa, known for its rich history, diverse culture, and stunning landscapes. It is home to ancient civilizations, including Axum and Lalibela, and is the origin of coffee. Addis Ababa, its capital, is the headquarters of the African Union.</p>
-  </aside>
-
-  <footer>
-    <p>&copy; 2025 🌍 Zelalem Eshetu • Addis Ababa, Ethiopia</p>
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> White Water Rafting Adventures</p>
+    <ul class="social">
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">YouTube</a></li>
+    </ul>
   </footer>
 
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
